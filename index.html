@@ -87,7 +87,7 @@ div.feature {
       <div class="large-12 columns">
         <div class="panel">
           <h4>Free and ticketed events around the town to celebrate music, jazz and Cambridge!</h4>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
+          <p>Check out and some other blurb:</p>
           <div class="row">
             <div class="large-3 medium-3 columns">
               <div class="right">
@@ -130,7 +130,7 @@ div.feature {
             </div>
         <script type="text/javascript">
             // Onhover show bigger description.
-            $('div.right.feature').hover(function() {
+            Foundation.utils.S('div.right #friday').hover(function() {
                 $("div.left div").hide();
                 $(this).closest("").find("div.left div." + $(this).attr("data-type")).show();
             });
@@ -140,7 +140,74 @@ div.feature {
       </div>
     </div>
 
+<hr><hr>
 
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="panel">
+          <h4>Free and ticketed events around the town to celebrate music, jazz and Cambridge!</h4>
+          <div class="row">
+            <div class="large-3 medium-3 columns">
+<dl class="tabs vertical" data-tab> 
+  <dd class="active" >
+    <a href="#panel1a" class="large button">Friday 13 June 2014</a>
+  </dd> 
+  <dd>
+    <a href="#panel2a" class="large button">Saturday 14 June 2014</a>
+  </dd> 
+  <dd>
+    <a href="#panel3a" class="large button">Sunday 15 June 2014</a>
+  </dd> 
+</dl> 
+</div>
+            <div class="large-6 medium-6 columns">
+              <div class="tabs-content vertical"> 
+                <div class="content active" id="panel1a"> 
+                   <p><strong>Friday</strong> </p>
+                   <p>Jazz Club @Fez</p>
+                </div>
+                <div class="content" id="panel2a">  
+                    <p><strong>SATURDAY</strong> </br>
+                      City Centre Kermesse, with marching bands around the street and and big bands in the Grand Arcade.</p>
+
+                </div>
+                <div class="content" id="panel3a"> 
+                    <p><strong>SUNDAY</strong> </br>
+                      Jazz in the garden at St. John College.</p>
+                </div>
+              <p><a href="http://github.com/zurb/foundation">Full Programme</a><br /></p>
+            </div>
+            </div>
+
+            <div class="large-3 medium-3 columns">
+              <div class="panel">
+
+              <p><a href="http://github.com/zurb/foundation">Latest</a><br />Latest code, issue reports, feature requests and more.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<!--
+<dl class="tabs vertical" data-tab> 
+  <dd class="active">
+    <a href="#panel1a">Tab 1</a>
+  </dd> 
+  <dd>
+    <a href="#panel2a">Tab 2</a>
+  </dd> 
+  <dd>
+    <a href="#panel3a">Tab 3</a>
+  </dd> 
+</dl> 
+<div class="tabs-content vertical"> 
+  <div class="content active" id="panel1a"> <p>Panel 1 content goes here.</p> </div> 
+  <div class="content" id="panel2a"> <p>Panel 2 content goes here.</p> </div> 
+  <div class="content" id="panel3a"> <p>Panel 3 content goes here.</p> </div> 
+</div>
+-->
 
 <!--
 
@@ -252,6 +319,7 @@ div.feature {
             });
  </script>
     <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/fastclick.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
